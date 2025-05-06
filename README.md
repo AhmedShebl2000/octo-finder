@@ -16,7 +16,7 @@ A simple React + Redux Toolkit project that allows users to search GitHub userna
 ## 🧑‍💻 Getting Started
 
 ### 1. Clone the repository
-git clone https://github.com/yourusername/github-user-finder.git
+git clone https://github.com/AhmedShebl2000/github-user-finder.git
 cd github-user-finder
 
 
