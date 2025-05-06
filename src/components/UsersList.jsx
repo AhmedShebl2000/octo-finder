@@ -1,11 +1,9 @@
 import { useSelector } from "react-redux";
 import UserCard from "./UserCard";
 
-function UsersList() {
+function UsersList({ setShowUsers }) {
   //Store configurations
   const { reposData, error, status } = useSelector((state) => state.repo);
-
-  console.log(reposData);
 
   return (
     <div className="flex flex-wrap gap-2">
@@ -15,8 +13,8 @@ function UsersList() {
         reposData &&
         reposData.length > 0 &&
         reposData.map((eachRepo) => (
-          <div key={eachRepo.login} className=" w-2/10  p-4 m-auto">
-            <UserCard eachRepo={eachRepo} />
+          <div key={eachRepo.login} className=" w-3/10  p-4 m-auto">
+            <UserCard eachRepo={eachRepo} setShowUsers={setShowUsers} />
           </div>
         ))}
     </div>
